@@ -102,7 +102,7 @@ freeFormPipeline {
       runStage("Node 8 Demo") {
         script { 
           withJenkins { sh "node --version" } 
-          root().nodeImage = "${dynamicDockerRegistry}/node:10.16.0"
+          root().nodeImage = "elilillyco-lilly-docker.jfrog.io/node:10.16.0"
         }
       }
     }
